@@ -1,0 +1,19 @@
+.site-header-nav{
+    width: 100%;
+    max-width: 711px;
+}
+.nav-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-list-item{
+    list-style-type: none;
+}
+.nav-list-item__link{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 16px;
+    font-family: "Geologica-Regular";
+}
