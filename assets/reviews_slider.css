@@ -1,0 +1,51 @@
+.reviews-list{
+    overflow: hidden;
+}
+.reviews-list-item{
+    background-color: var(--white);
+}
+.reviews-list-item-wrap{
+    padding: 32px 40px;
+}
+.reviews-list-item-text{
+    font-family: "Geologica-Light";
+    font-size: 16px;
+    color: var(--dark-grey);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6; 
+    -webkit-box-orient: vertical;
+}
+.reviews-list-item-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 48px;
+}
+.reviews-list-item-author{
+    font-family: "Geologica-Regular";
+    font-size: 20px;
+    color: var(--black);
+}
+.reviews-list-item-readmore__link{
+    font-family: "Geologica-Regular";
+    font-size: 16px;
+    color: var(--dark-grey);
+}
+.reviews-list-nav{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 32px;
+}
+.reviews-slider-nav-item{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-grey);
+    border: none;
+    cursor: pointer;
+}
