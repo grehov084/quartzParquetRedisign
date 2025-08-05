@@ -44,7 +44,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $('.reviews-list-wrap').owlCarousel({
-        loop: false, 
+        loop: true, 
         nav: true,
         dots: false,
         items: 1,

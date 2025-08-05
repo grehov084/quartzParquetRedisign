@@ -4,6 +4,8 @@
 @import url("banner.css");
 @import url("designers_slider.css");
 @import url("reviews_slider.css");
+@import url("blog.css");
+
 :root{
     --black: rgba(43, 42, 41, 1);
     --dark-grey: rgba(131, 127, 122, 1);
@@ -83,6 +85,10 @@ body{
     transition: 0.5s;
     border: 1px solid var(--black);
 }
+.btn--white{
+    color: var(--white);
+    border-color: var(--white);
+}
 .site-main-innovations{
     padding-top: 120px;
     padding-bottom: 150px;
@@ -112,12 +118,18 @@ body{
     text-transform: uppercase;
     padding-bottom: 6px;
 }
+.subtitle--white{
+    color: var(--white);
+}
 .title{
     font-family: "Geologica-Regular";
     font-size: 36px;
     line-height: 1.2;
     color: var(--black);
     text-transform: uppercase;
+}
+.title--white{
+    color: var(--white);
 }
 .site-main-materials{
     background-color: var(--light-grey);
@@ -332,9 +344,43 @@ body{
     display: flex;
     gap: 24px;
  }
+ .site-main-blog-wrap{
+    padding: 150px 0;
+ }
+ .site-main-blog-row{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+ }
+ .site-main-where-buy-title{
+    max-width: 598px;
+    padding-bottom: 24px;
+ }
+ .site-main-where-buy__img,
+ .site-main-where-buy-pic{
+    width: 100%;
+ }
+ .site-main-where-buy-content{
+    position: absolute;
+    width: 100%;
+ }
+ .site-main-where-buy{
+    display: flex;
+    align-items: center;
+ }
+ .site-footer{
+    background-color: var(--black);
+ }
+ .site-footer-wrap{
+    padding: 60px 0;
+ }
 @media screen {
     .btn:hover{
         background-color: var(--black);
+        color: var(--white);
+    }
+    .btn--white:hover{
+        background-color: var(--white);
         color: var(--white);
     }
 }

@@ -1,0 +1,31 @@
+.blog-list{
+    display: flex;
+    justify-content: space-between;
+}
+.blog-list-item{
+    width: 100%;
+    max-width: 318px;
+}
+.blog-item-source{
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-family: "Geologica-Medium";
+    font-size: 14px;
+}
+.blog-item-title{
+    font-size: 20px;
+    color: var(--black);
+    font-family: "Geologica-Regular";
+    padding-top: 8px;
+    line-height: 1.2;
+    max-width: 294px;
+}
+.blog-item-description{
+    font-size: 16px;
+    font-family: "Geologica-Light";
+    padding-top: 8px;
+}
+.blog-item-link{
+    text-decoration: none;
+    color: var(--dark-grey);
+}
