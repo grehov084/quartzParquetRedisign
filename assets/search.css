@@ -1,0 +1,37 @@
+.site-header-search{
+    width: 100%;
+    position: absolute;
+    background-color: var(--white);
+    transform: translateY(-100%);
+    transition: 0.7s;
+    border-top: 1px solid var(--light-grey);
+}
+.site-header-search.show{
+    transform: translateY(0);
+}
+.site-header-search-wrap{
+    display: flex;
+    padding: 48px 0;
+}
+.site-header-search__input{
+    font-family: "Geologica-Light";
+    width: 100%;
+    max-width: 1140px;
+    border: 1px solid var(--grey);
+    border-right: unset !important;
+    color: var(--dark-grey);
+    padding: 13px 16px;
+}
+.site-header-search__button{
+    padding: 12px 76px;
+    font-family: "Geologica-Regular";
+    font-size: 16px;
+    color: var(--white);
+    background-color: var(--black);
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.site-header-search__button:hover{
+    background-color: #000;
+}

@@ -1,4 +1,4 @@
-let propsTitle, propsContent, propsItemTitlePic, height;
+let propsTitle, propsContent, propsItemTitlePic, height, searchToggle, searchContent;
 document.addEventListener("DOMContentLoaded", ()=>{
     propsTitle = document.querySelectorAll(".properties-list-item-title");
     if(propsTitle != null){
@@ -20,6 +20,13 @@ document.addEventListener("DOMContentLoaded", ()=>{
                     propsContent.removeAttribute("style");
                 }
             });
+        });
+    }
+    searchToggle = document.querySelector(".site-header-search-toggle");
+    if(searchToggle != null){
+        searchToggle.addEventListener("click", ()=>{
+            searchContent = document.querySelector(".site-header-search");
+            searchContent.classList.toggle("show");
         });
     }
 });

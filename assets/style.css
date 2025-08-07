@@ -5,6 +5,7 @@
 @import url("designers_slider.css");
 @import url("reviews_slider.css");
 @import url("blog.css");
+@import url("search.css");
 
 :root{
     --black: rgba(43, 42, 41, 1);
@@ -25,6 +26,8 @@ body{
 }
 .site-header-top{
     background-color: var(--black);
+    position: relative;
+    z-index: 998;
 }
 .site-header-top-wrap{
     display: flex;
@@ -70,6 +73,11 @@ body{
 }
 .site-header-search-toggle{
     cursor: pointer;
+}
+.site-header-bottom{
+    position: relative;
+    z-index: 998;
+    background-color: var(--white);
 }
 .site-header-bottom-wrap{
     display: flex;
