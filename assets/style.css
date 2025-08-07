@@ -11,6 +11,7 @@
     --dark-grey: rgba(131, 127, 122, 1);
     --white: #fff;
     --light-grey: rgba(245, 245, 245, 1);
+    --grey: rgba(235, 236, 236, 1);
 }
 body{
     font-family: "Geologica-Thin";
@@ -373,7 +374,74 @@ body{
  }
  .site-footer-wrap{
     padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
  }
+ .site-footer-info{
+    width: 100%;
+    max-width: 549px;
+ }
+ .site-footer-info-text{
+    font-family: "Geologica-Light";
+    font-size: 14px;
+    color: var(--dark-grey);
+    padding-top: 40px;
+ }
+ .site-footer-info-copy{
+    padding-top: 8px;
+ }
+ .site-footer-title{
+    font-family: "Geologica-Regular";
+    text-transform: uppercase;
+    font-size: 16px;
+    color: var(--dark-grey);
+    padding-bottom: 24px;
+ }
+ .site-footer-menu-list{
+    margin: 0;
+ }
+ .site-footer-menu-list-item{
+    list-style-type: none;
+ }
+ .site-footer-menu-list-item:not(:last-child){
+    padding-bottom: 16px;
+ }
+ .site-footer-menu-list-item__link{
+    text-decoration: none;
+    font-family: "Geologica-Light";
+    color: var(--grey);
+ }
+ .site-footer-social-item-wrap{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+ }
+ .site-footer-social-item-link{
+    font-family: "Geologica-Regular";
+    text-decoration: none;
+    color: var(--grey);
+}
+.site-footer-social-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.site-footer-social-item-pic{
+    display: flex;
+}
+.site-footer-brands-list{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.site-main-structure-pic{
+    display: flex;
+    justify-content: end;
+}
+.site-main-structure-text{
+    padding-top: 20px;
+    max-width: 500px;
+}
 @media screen {
     .btn:hover{
         background-color: var(--black);
