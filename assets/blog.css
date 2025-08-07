@@ -29,3 +29,25 @@
     text-decoration: none;
     color: var(--dark-grey);
 }
+@media(max-width: 1375px){
+    .blog-list-item{
+        max-width: 24%;
+    }
+}
+@media(max-width: 900px){
+    .blog-list{
+        flex-wrap: wrap;
+        gap: 20px 0;
+    }
+    .blog-list-item{
+        max-width: 49%;
+    }
+    .blog-item__img{
+        width: 100%;
+    }
+}
+@media(max-width: 500px){
+    .blog-list-item{
+        max-width: 100%;
+    }
+}

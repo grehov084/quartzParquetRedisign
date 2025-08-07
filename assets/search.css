@@ -5,6 +5,7 @@
     transform: translateY(-100%);
     transition: 0.7s;
     border-top: 1px solid var(--light-grey);
+    z-index: 996;
 }
 .site-header-search.show{
     transform: translateY(0);
@@ -34,4 +35,10 @@
 }
 .site-header-search__button:hover{
     background-color: #000;
+}
+@media(max-width: 500px){
+    .site-header-search-wrap{
+        flex-direction: column;
+        gap: 15px;
+    }
 }

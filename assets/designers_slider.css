@@ -10,7 +10,12 @@
 .designers-slider-item{
     width: 100%;
     max-width: 318px;
+    visibility: hidden;
 }
+.designers-slider-item.active{
+    visibility: visible;
+}
+
 .designers-slider-item-wrap{
     display: flex;
     justify-content: center;
@@ -78,3 +83,13 @@
     display: none;
 }
 */
+@media (max-width: 1348px) {
+    .designers-slider-item{
+        max-width: unset;
+    }
+    .designers-slider-nav{
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: 98%;
+    }
+}

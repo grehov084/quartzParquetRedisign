@@ -3,6 +3,10 @@
 }
 .reviews-list-item{
     background-color: var(--white);
+    visibility: hidden;
+}
+.reviews-list-item.active{
+    visibility: visible;
 }
 .reviews-list-item-wrap{
     padding: 32px 40px;
@@ -48,4 +52,9 @@
     background-color: var(--dark-grey);
     border: none;
     cursor: pointer;
+}
+@media(max-width: 1390px){
+    .reviews-list-nav{
+        padding-top: 32px;
+    }
 }

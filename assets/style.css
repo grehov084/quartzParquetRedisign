@@ -6,6 +6,7 @@
 @import url("reviews_slider.css");
 @import url("blog.css");
 @import url("search.css");
+@import url("mobileMenu.css");
 
 :root{
     --black: rgba(43, 42, 41, 1);
@@ -13,6 +14,7 @@
     --white: #fff;
     --light-grey: rgba(245, 245, 245, 1);
     --grey: rgba(235, 236, 236, 1);
+    --top: 6px;
 }
 body{
     font-family: "Geologica-Thin";
@@ -23,6 +25,22 @@ body{
     padding: 0 10px;
     max-width: 1365px;
     width: 100%;
+}
+.site.site--no-scroll{
+    overflow-y: hidden;
+}
+.site-overlay{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000%;
+    z-index: 995;
+    display: none;
+}
+.site-overlay.show{
+    display: block;
 }
 .site-header-top{
     background-color: var(--black);
@@ -78,6 +96,11 @@ body{
     position: relative;
     z-index: 998;
     background-color: var(--white);
+}
+.site-header-bottom-right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 .site-header-bottom-wrap{
     display: flex;
@@ -329,6 +352,10 @@ body{
     font-size: 16px;
     color: var(--black);
  }
+ .collections-list-item__img{
+    height: 100%;
+    object-fit: cover;
+ }
  .site-main-reviews{
     background-color: var(--light-grey);
  }
@@ -454,6 +481,64 @@ body{
     padding-top: 20px;
     max-width: 500px;
 }
+.site-up{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+    background-color: rgb(30, 30, 30);
+    transition: 0.5s !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    opacity: 0;
+}
+.site-header-burger span, .site-header-burger span::before, .site-header-burger span::after {
+    height: 3px;
+    width: 25px;
+    display: block;
+    background-color: black;
+}
+.site-header-burger span::before {
+    content: "";
+    display: block;
+    position: relative;
+    top: calc(var(--top) * (-1));
+}
+.site-header-burger span i {
+    display: block;
+}
+.site-header-burger span::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: calc(var(--top) - 2px);
+    transform: rotate(var(--rotateDown));
+}
+.site-header--hide{
+    position: relative;
+    z-index: 995;
+}
+.site-header-mobile{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    max-width: 60%;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    z-index: 999;
+}
+.site-header-mobile.show{
+    transform: translateX(0);
+}
 @media screen {
     .btn:hover{
         background-color: var(--black);
@@ -461,7 +546,47 @@ body{
     }
     .btn--white:hover{
         background-color: var(--white);
-        color: var(--white);
+        color: var(--black);
+    }
+    .site-up:hover{
+        background-color: #000;
     }
 }
-
+@media(min-width: 585px){
+    .site-header-burger{
+        display: none;
+    }
+}
+@media(max-width: 1390px){
+    .site-main-reviews-wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media(max-width: 768px){
+    .title{
+        font-size: 30px;
+    }
+    .site-main-reviews__img{
+        max-width: 48%;
+    }
+}
+@media(max-width: 710px){
+    .site-header-logo__img{
+        max-width: 95px;
+    }
+}
+@media(max-width: 660px){
+    .title{
+        font-size: 24px;
+    }
+}
+@media(max-width: 565px){
+    .site-main-designers-row{
+        flex-direction: column;
+        align-items: start;
+    }
+    .site-main-designers-title{
+        padding-bottom: 25px;
+    }
+}

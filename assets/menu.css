@@ -17,3 +17,37 @@
     font-size: 16px;
     font-family: "Geologica-Regular";
 }
+@media(max-width: 930px){
+    .site-header-nav{
+        max-width: 615px;
+    }
+}
+@media(max-width: 850px){
+    .nav-list-item__link{
+        font-size: 14px;
+    }
+    .site-header-nav {
+        max-width: 550px;
+    }
+}
+@media(max-width: 768px){
+    .site-header-nav {
+        max-width: 490px;
+    }
+    .nav-list-item__link {
+        font-size: 13px;
+    }
+}
+@media(max-width: 640px){
+    .nav-list-item__link {
+        font-size: 11px;
+    }
+    .site-header-nav {
+        max-width: 415px;
+    }
+}
+@media(max-width: 585px){
+    .site-header-nav{
+        display: none;
+    }
+}
