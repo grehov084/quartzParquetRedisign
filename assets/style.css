@@ -345,6 +345,10 @@ body{
     display: flex;
     gap: 24px;
  }
+ .site-main-reviews__img{
+    width: 100%;
+    object-fit: contain;
+ }
  .site-main-blog-wrap{
     padding: 150px 0;
  }
