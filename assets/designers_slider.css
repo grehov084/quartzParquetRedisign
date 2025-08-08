@@ -59,6 +59,7 @@
     width: 100%;
     max-width: 1365px;
     padding-bottom: 125px;
+    z-index: 500;
 }
 .designers-slider-nav-item{
     width: 32px;
