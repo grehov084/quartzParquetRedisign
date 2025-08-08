@@ -1,0 +1,31 @@
+.site-header-mobile-top{
+    display: flex;
+    justify-content: end;
+}
+.site-header-mobile-bottom{
+    padding: 0 25px;
+}
+.mobile-nav-list-item{
+    list-style-type: none;
+}
+.mobile-nav-list-item:not(:last-child){
+    padding-bottom: 15px;
+}
+.mobile-nav-list-item__link{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Geologica-Regular";
+    color: var(--black);
+}
+.mobile-contacts-item__link{
+    text-decoration: none;
+    font-family: "Geologica-Regular";
+    font-size: 14px;
+    color: var(--black);
+}
+.site-header-mobile-social{
+    display: flex;
+    gap: 15px;
+    padding-top: 15px;
+}

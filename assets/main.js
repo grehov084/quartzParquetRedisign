@@ -1,4 +1,4 @@
-let body, site, header, siteOverlay, propsTitle, propsContent, propsItemTitlePic, height, searchToggle, searchContent, siteUpButton, mobileMenuToggle, mobileMenu;
+let body, site, header, siteOverlay, propsTitle, propsContent, propsItemTitlePic, height, searchToggle, searchContent, siteUpButton, mobileMenuToggle, mobileMenuCloseToggle, mobileMenu;
 
 function fadeIn(el, timeout, display){
     el.style.opacity = 0;
@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     header = document.querySelector(".site-header-content");
     mobileMenuToggle = document.querySelector(".site-header-burger");
     mobileMenu = document.querySelector(".site-header-mobile");
+    mobileMenuCloseToggle = document.querySelector(".site-header-mobile-close");
     site = document.querySelector(".site");
     if(propsTitle != null){
         propsTitle.forEach((propsTitleItem)=>{
@@ -95,6 +96,13 @@ document.addEventListener("DOMContentLoaded", ()=>{
         mobileMenu.classList.add("show");
         site.classList.add("site--no-scroll");
         body.style.overflow = "hidden";
+    });
+    mobileMenuCloseToggle.addEventListener("click", ()=>{
+        mobileMenu.classList.remove("show");
+        header.classList.remove("site-header--hide");
+        fadeOut(siteOverlay, 500);
+        body.removeAttribute("style");
+        site.classList.remove("site--no-scroll");
     });
     siteOverlay.addEventListener("click", ()=>{
         if(mobileMenu.classList.contains("show")){
