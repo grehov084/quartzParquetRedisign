@@ -19,7 +19,10 @@
 .designers-slider-item.active{
     visibility: visible;
 }
-
+.designers-slider-wrap .owl-stage{
+    height: 435px !important;
+    max-height: unset !important;
+}
 .designers-slider-item-wrap{
     display: flex;
     justify-content: center;
