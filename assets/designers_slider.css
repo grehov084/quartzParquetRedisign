@@ -102,4 +102,8 @@
         justify-content: center;
         max-height: 300px;
     }
+    .designers-slider-item__img{
+        width: 100%;
+        max-width: 300px;
+    }
 }
