@@ -93,3 +93,8 @@
         max-width: 98%;
     }
 }
+@media(max-width: 600px){
+    .designers-slider-nav{
+        max-width: 95%;
+    }
+}
