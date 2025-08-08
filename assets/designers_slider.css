@@ -96,4 +96,10 @@
     .designers-slider-nav{
         max-width: 95%;
     }
+    .designers-slider-item-pic{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        max-height: 300px;
+    }
 }
