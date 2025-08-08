@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         dots: false,
         responsiveClass:true,
         margin: 24,
-        itemClass: "designers-slider-item",
+        //itemClass: "designers-slider-item",
         navContainer: ".designers-slider-nav",
         navClass: ["designers-slider-nav-item designers-slider-nav-item--prev", "designers-slider-nav-item designers-slider-nav--next"],
         navText: ['<svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M7.99998 15L1 7.99988L8 1" stroke="white"/></svg>', '<svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M1.00002 15L8 7.99988L0.999999 1" stroke="white"/></svg>'],
