@@ -133,6 +133,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         responsive: {
             0: {
                 items: 1,
+                margin: 0,
             },
             600:{
                 items: 2,
