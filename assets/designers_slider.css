@@ -9,7 +9,6 @@
 }
 .designers-slider-item{
     width: 100%;
-    max-width: 318px;
     visibility: hidden;
 }
 .designers-slider-item.active{
