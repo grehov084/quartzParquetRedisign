@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     });
 });
 
-$(document).ready(function() {
+
     $('.designers-slider-wrap').owlCarousel({
         loop: false, 
         nav: true,
@@ -145,7 +145,7 @@ $(document).ready(function() {
             }
         }
     });
-});
+
 
 $(document).ready(function() {
     $('.reviews-list-wrap').owlCarousel({
