@@ -60,8 +60,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
     }
     searchToggle = document.querySelector(".site-header-search-toggle");
     if(searchToggle != null){
+        searchContent = document.querySelector(".site-header-search");
         searchToggle.addEventListener("click", ()=>{
-            searchContent = document.querySelector(".site-header-search");
             searchContent.classList.toggle("show");
             if(searchContent.classList.contains("show"))
                 fadeIn(siteOverlay, 500);
@@ -100,7 +100,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
     mobileMenuCloseToggle.addEventListener("click", ()=>{
         mobileMenu.classList.remove("show");
         header.classList.remove("site-header--hide");
-        fadeOut(siteOverlay, 500);
+        if(!searchContent.classList.contains("show")){
+            fadeOut(siteOverlay, 500);
+        }
         body.removeAttribute("style");
         site.classList.remove("site--no-scroll");
     });
@@ -108,7 +110,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
         if(mobileMenu.classList.contains("show")){
             mobileMenu.classList.remove("show");
             header.classList.remove("site-header--hide");
-            fadeOut(siteOverlay, 500);
+            if(!searchContent.classList.contains("show")){
+                fadeOut(siteOverlay, 500);
+            }
             body.removeAttribute("style");
             site.classList.remove("site--no-scroll");
         }
