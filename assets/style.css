@@ -20,6 +20,9 @@ body{
     font-family: "Geologica-Thin";
     color: var(--black);
 }
+.site{
+    overflow-x: hidden;
+}
 .container{
     margin: 0 auto;
     padding: 0 10px;
