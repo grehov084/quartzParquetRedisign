@@ -120,8 +120,25 @@ document.addEventListener("DOMContentLoaded", ()=>{
 });
 
 
+
+
+
+$(document).ready(function() {
+    $('.reviews-list-wrap').owlCarousel({
+        loop: true, 
+        nav: true,
+        dots: false,
+        items: 1,
+        itemClass: "reviews-list-item",
+        navContainer: ".reviews-list-nav",
+        navClass: ["reviews-slider-nav-item reviews-slider-nav-item--prev", "reviews-slider-nav-item reviews-slider-nav--next"],
+        navText: ['<svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M7.99998 15L1 7.99988L8 1" stroke="white"/></svg>', '<svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M1.00002 15L8 7.99988L0.999999 1" stroke="white"/></svg>'],
+        responsive: {
+            
+        }
+    });
     $('.designers-slider-wrap').owlCarousel({
-        loop: false, 
+        loop: true, 
         nav: true,
         dots: false,
         responsiveClass:true,
@@ -146,20 +163,13 @@ document.addEventListener("DOMContentLoaded", ()=>{
             }
         }
     });
-
-
-$(document).ready(function() {
-    $('.reviews-list-wrap').owlCarousel({
-        loop: true, 
-        nav: true,
-        dots: false,
+    $('.blog-list-mobile-wrap').owlCarousel({
+        nav: false,
+        dots: true,
+        loop: true,
         items: 1,
-        itemClass: "reviews-list-item",
-        navContainer: ".reviews-list-nav",
-        navClass: ["reviews-slider-nav-item reviews-slider-nav-item--prev", "reviews-slider-nav-item reviews-slider-nav--next"],
-        navText: ['<svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M7.99998 15L1 7.99988L8 1" stroke="white"/></svg>', '<svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M1.00002 15L8 7.99988L0.999999 1" stroke="white"/></svg>'],
-        responsive: {
-            
-        }
+        dotsContainer: ".blog-list-mobile-dots",
+        dotClass: "blog-list-mobile-dots-item",
+        itemClass: "blog-list-mobile-item",
     });
 });

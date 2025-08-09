@@ -6,6 +6,9 @@
 /*
  *  Owl Carousel - Core
  */
+ .owl-nav.disabled{
+  display: none;
+ }
  .designers-slider-wrap {
   display: none;
   width: 100%;

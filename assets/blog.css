@@ -1,4 +1,4 @@
-.blog-list{
+.blog-list, .blog-list-mobile{
     display: flex;
     justify-content: space-between;
 }
@@ -6,13 +6,13 @@
     width: 100%;
     max-width: 318px;
 }
-.blog-item-source{
+.blog-list-item-source, .blog-list-mobile-item-source{
     text-transform: uppercase;
     padding-top: 20px;
     font-family: "Geologica-Medium";
     font-size: 14px;
 }
-.blog-item-title{
+.blog-list-item-title, .blog-list-mobile-item-title{
     font-size: 20px;
     color: var(--black);
     font-family: "Geologica-Regular";
@@ -20,14 +20,52 @@
     line-height: 1.2;
     max-width: 294px;
 }
-.blog-item-description{
+.blog-list-item-description, .blog-list-mobile-item-description{
     font-size: 16px;
     font-family: "Geologica-Light";
     padding-top: 8px;
 }
-.blog-item-link{
+.blog-list-mobile-item-description{
+    max-width: 318px;
+}
+.blog-list-item-link, .blog-list-mobile-item-link{
     text-decoration: none;
     color: var(--dark-grey);
+}
+.blog-list-mobile{
+    display: none;
+    flex-direction: column;
+}
+.blog-list-mobile-item{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+}
+.blog-list-mobile-item-description{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; 
+    -webkit-box-orient: vertical;
+}
+.blog-list-mobile-item.active{
+    visibility: visible;
+}
+.blog-list-mobile-dots{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 15px;
+}
+.blog-list-mobile-dots-item{
+    border-radius: 50%;
+    border: 1px solid var(--black);
+    width: 15px;
+    height: 15px;
+    background-color: var(--white);
+}
+.blog-list-mobile-dots-item.active{
+    background-color: var(--black);
 }
 @media(max-width: 1375px){
     .blog-list-item{
@@ -42,12 +80,15 @@
     .blog-list-item{
         max-width: 49%;
     }
-    .blog-item__img{
+    .blog-list-item__img{
         width: 100%;
     }
 }
 @media(max-width: 500px){
-    .blog-list-item{
-        max-width: 100%;
+    .blog-list{
+        display: none;
+    }
+    .blog-list-mobile{
+        display: flex;
     }
 }
