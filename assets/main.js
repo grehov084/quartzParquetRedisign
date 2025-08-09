@@ -37,6 +37,15 @@ function closeMobileMenu(scrollVal){
 }
 
 document.addEventListener("DOMContentLoaded", ()=>{
+    body = document.querySelector("body");
+    siteOverlay = document.querySelector(".site-overlay");
+    propsTitle = document.querySelectorAll(".properties-list-item-title");
+    siteUpButton = document.querySelector(".site-up");
+    header = document.querySelector(".site-header-content");
+    mobileMenuToggle = document.querySelector(".site-header-burger");
+    mobileMenu = document.querySelector(".site-header-mobile");
+    mobileMenuCloseToggle = document.querySelector(".site-header-mobile-close");
+    site = document.querySelector(".site");
     window.addEventListener("scroll", ()=>{
         scrollVal = window.scrollY;
         if(window.scrollY > 0){
@@ -49,16 +58,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
     });
     if(window.pageYOffset != 0){
         scrollVal = window.pageYOffset;
+        fadeIn(siteUpButton, 500);  
     }
-    body = document.querySelector("body");
-    siteOverlay = document.querySelector(".site-overlay");
-    propsTitle = document.querySelectorAll(".properties-list-item-title");
-    siteUpButton = document.querySelector(".site-up");
-    header = document.querySelector(".site-header-content");
-    mobileMenuToggle = document.querySelector(".site-header-burger");
-    mobileMenu = document.querySelector(".site-header-mobile");
-    mobileMenuCloseToggle = document.querySelector(".site-header-mobile-close");
-    site = document.querySelector(".site");
     if(propsTitle != null){
         propsTitle.forEach((propsTitleItem)=>{
             propsTitleItem.addEventListener("click", ()=>{
