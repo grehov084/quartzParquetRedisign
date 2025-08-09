@@ -1,4 +1,4 @@
-.blog-list, .blog-list-mobile{
+.blog-list, .blog-list-wrap{
     display: flex;
     justify-content: space-between;
 }
