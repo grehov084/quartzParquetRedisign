@@ -223,6 +223,8 @@ body{
     align-items: center;
     gap: 16px;
     cursor: pointer;
+}
+.properties-list-item-title-text{
     font-family: "Geologica-Medium";
     font-size: 20px;
 }
@@ -694,6 +696,9 @@ body{
     }
     .site-main-innovations-text{
         font-size: 23px;
+    }
+    .properties-list-item-title-text{
+        max-width: 320px;
     }
 }
 @media(max-width: 425px){
