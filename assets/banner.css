@@ -2,12 +2,6 @@
     width: 100%;
 }
 @media(max-width: 500px){
-    .site-main-banner-wrap,
-    .site-main-banner-item,
-    .site-main-banner-item-link,
-    .site-main-banner-item__img{
-        height: inherit;
-    }
     .site-main-banner-item__img{
         object-fit: cover;
     }
