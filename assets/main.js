@@ -39,6 +39,13 @@ function closeMobileMenu(scrollVal){
 document.addEventListener("DOMContentLoaded", ()=>{
     window.addEventListener("scroll", ()=>{
         scrollVal = window.scrollY;
+        if(window.scrollY > 0){
+            if(!siteUpButton.hasAttribute("style"))
+                fadeIn(siteUpButton, 500);
+        }
+        if(window.scrollY == 0){
+            fadeOut(siteUpButton, 500);
+        }
     });
     if(window.pageYOffset != 0){
         scrollVal = window.pageYOffset;
@@ -95,15 +102,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
             left: 0,
             behavior: "smooth",
         });
-    });
-    window.addEventListener("scroll", ()=>{
-        if(window.scrollY > 0){
-            if(!siteUpButton.hasAttribute("style"))
-                fadeIn(siteUpButton, 500);
-        }
-        if(window.scrollY == 0){
-            fadeOut(siteUpButton, 500);
-        }
     });
     mobileMenuToggle.addEventListener("click", ()=>{
         if(scrollVal != 0){
