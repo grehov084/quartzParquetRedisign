@@ -2,9 +2,6 @@
     width: 100%;
 }
 @media(max-width: 500px){
-    .site-main-banner{
-        height: 400px;
-    }
     .site-main-banner-wrap,
     .site-main-banner-item,
     .site-main-banner-item-link,
