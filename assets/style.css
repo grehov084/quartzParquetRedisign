@@ -674,7 +674,8 @@ body{
         flex-direction: column;
         align-items: center;
     }
-    .site-footer-info-copy{
+    .site-footer-info-copy,
+    .site-footer-info-legacy{
         text-align: center;
     }
 }
