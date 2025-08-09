@@ -718,8 +718,23 @@ body{
         padding-bottom: 25px;
     }
 }
+@media(max-width: 400px){
+    .properties-list-item-title-text {
+        max-width: 276px;
+    }
+}
 @media(max-width: 375px){
     .site-header-mobile{
         max-width: 100%;
+    }
+}
+@media(max-width: 350px){
+    .properties-list-item-title-text {
+        max-width: 265px;
+    }
+}
+@media(max-width: 330px){
+    .properties-list-item-title-text {
+        max-width: 250px;
     }
 }
