@@ -119,10 +119,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
     });
 });
 
-
-
-
-
 $(document).ready(function() {
     $('.reviews-list-wrap').owlCarousel({
         loop: true, 
