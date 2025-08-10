@@ -118,6 +118,7 @@
     background-color: var(--dark-grey);
     max-width: 240px;
     top: 260px;
+    box-shadow: 3px 4px 9px var(--dark-grey);
 }
 .card-price-about-pic{
     cursor: pointer;
