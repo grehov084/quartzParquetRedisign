@@ -7,6 +7,7 @@
 @import url("blog.css");
 @import url("search.css");
 @import url("mobileMenu.css");
+@import url("card.css");
 
 :root{
     --black: rgba(43, 42, 41, 1);
@@ -124,6 +125,10 @@ body{
 .btn--white{
     color: var(--white);
     border-color: var(--white);
+}
+.btn--black{
+    background-color: var(--black);
+    color: var(--white);
 }
 .site-main-innovations{
     padding-top: 120px;
@@ -559,6 +564,9 @@ body{
     .btn--white:hover{
         background-color: var(--white);
         color: var(--black);
+    }
+    .btn--black{
+        background-color: #000;
     }
     .site-up:hover{
         background-color: #000;

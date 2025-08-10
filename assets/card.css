@@ -1,0 +1,175 @@
+.card-top{
+    display: flex;
+    justify-content: space-between;
+}
+.card-gallery{
+    width: 100%;
+    max-width: 698px;
+    display: flex;
+    gap: 8px;
+}
+.card-info{
+    width: 100%;
+    max-width: 546px;
+}
+.card-gallery-list{
+    width: 100%;
+    max-width: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.card-gallery-main{
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.card-gallery-main-click{
+    align-self: flex-end;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.card-gallery-list-item{
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+}
+.card-gallery-list-item.active{
+    border-bottom: 2px solid var(--black);
+    padding-bottom: 4px;
+}
+.card-gallery-list-item__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-gallery-main-dowload{
+    color: var(--white);
+    font-family: "Geologica-Regular";
+    font-size: 16px;
+    position: absolute;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.card-gallery-main-click{
+    position: absolute;
+}
+.card-tags{
+    display: flex;
+    gap: 12px;
+    padding-bottom: 12px;
+}
+.card-tags__item{
+    background-color: var(--dark-grey);
+    color: var(--white);
+    font-size: "Geologica-Light";
+    font-size: 16px;
+    padding: 2px 8px;
+}
+.card-tags__item--discount{
+    background-color: var(--light-grey);
+    color: var(--dark-grey);
+}
+.card-name{
+    font-family: "Geologica-Medium";
+    font-size: 28px;
+    color: var(--black);
+    padding-bottom: 12px;
+    line-height: 1.3;
+}
+.card-code{
+    font-family: "Geologica-Light";
+    font-size: 16px;
+    color: var(--dark-grey);
+    display: flex;
+    gap: 8px;
+}
+.card-buy{
+    padding: 32px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.card-price{
+    display: flex;
+    gap: 12px;
+    align-items: end;
+}
+.card-price-current{
+    font-family: "Geologica-Regular";
+    font-size: 24px;
+    color: var(--black);
+}
+.card-price-old{
+    font-family: "Geologica-Light";
+    font-size: 16px;
+    color: var(--dark-grey);
+    text-decoration: line-through;
+}
+.card-buy-action__link{
+    padding: 13px 72px !important;
+}
+.card-price-about{
+    display: flex;
+    justify-content: center;
+}
+.card-price-about-text{
+    position: absolute;
+    background-color: var(--dark-grey);
+    max-width: 240px;
+    top: 260px;
+}
+.card-price-about-text-wrap{
+    color: var(--white);
+    font-family: "Geologica-LIght";
+    font-size: 14px;
+    padding: 12px;
+}
+
+.card-collection{
+    font-family: "Geologica-Light";
+    font-size: 16px;
+    color: var(--dark-grey);
+}
+.card-collection-name{
+    display: flex;
+    gap: 16px;
+}
+.card-collection-val{
+    color: var(--black);
+}
+.collection-list{
+    display: flex;
+    gap: 12px;
+    padding-top: 16px;
+    align-items: center;
+    padding-bottom: 32px;
+}
+.collection-list-item{
+    width: 98px;
+    height: 98px;
+}
+.collection-list-item.active{
+    padding: 4px;
+    border: 1px solid var(--black);
+    width: 106px;
+    height: 106px;
+}
+.collection-list-item__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-selection__link, .card-textures__link{
+    font-family: "Geologica-Regular";
+    font-size: 16px;
+    color: var(--black);
+}
+.card-textures{
+    padding-top: 16px;
+}
+.card-remark{
+    font-family: "Geologica-Thin";
+    font-size: 14px;
+    padding-top: 32px;
+}
