@@ -8,6 +8,7 @@
 @import url("search.css");
 @import url("mobileMenu.css");
 @import url("card.css");
+@import url("calc.css");
 
 :root{
     --black: rgba(43, 42, 41, 1);
@@ -129,6 +130,9 @@ body{
 .btn--black{
     background-color: var(--black);
     color: var(--white);
+}
+.site-main--pb{
+    padding-bottom: 80px;
 }
 .site-main-innovations{
     padding-top: 120px;

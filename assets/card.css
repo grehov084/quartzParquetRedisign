@@ -21,6 +21,7 @@
 }
 .card-gallery-main{
     max-height: 600px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -54,6 +55,11 @@
 }
 .card-gallery-main-click{
     position: absolute;
+}
+.card-gallery-main__img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .card-tags{
     display: flex;
@@ -119,6 +125,7 @@
     max-width: 240px;
     top: 260px;
     box-shadow: 3px 4px 9px var(--dark-grey);
+    display: none;
 }
 .card-price-about-pic{
     cursor: pointer;
@@ -135,12 +142,11 @@
     left: 46%; bottom: -20px;
     border: 10px solid transparent;
     border-top: 10px solid var(--dark-grey);
-   }
-   .card-price-about-text-wrap::after {
+}
+.card-price-about-text-wrap::after {
     border-top: 10px solid var(--dark-grey);
     bottom: -19px; 
-   }
-
+}
 .card-collection{
     font-family: "Geologica-Light";
     font-size: 16px;
@@ -187,4 +193,108 @@
     font-family: "Geologica-Thin";
     font-size: 14px;
     padding-top: 32px;
+}
+.card-bottom{
+    padding-top: 80px;
+}
+.card-tabs-list{
+    display: flex;
+    gap: 32px;
+    width: 100%;
+    border-bottom: 1px solid var(--grey);
+}
+.card-tabs-list-item{
+    font-family: "Geologica-Regular";
+    font-size: 16px;
+    color: var(--dark-grey);
+    padding: 12px 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.card-tabs-list-item.active{
+    color: var(--black);
+    border-bottom: 1px solid var(--black);
+}
+.card-tabs-content-list-item, .card-calc{
+    display: none;
+}
+.card-tabs-content-list-item.active, .card-calc.active{
+    display: block;
+}
+.card-tabs-content-list-item-title{
+    font-family: "Geologica-Regular";
+    font-size: 24px;
+    padding-top: 50px;
+    padding-bottom: 32px;
+}
+.card-props-item-space{
+    flex: 1;
+    border-bottom: 1px dotted #d7d7d7;
+}
+.card-props-right, .card-props-left{
+    width: 100%;
+    max-width: 49%;
+}
+.card-props{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Geologica-Light";
+    font-size: 16px;
+}
+.card-props-item{
+    display: flex;
+}
+.card-tabs-content-list-item-content{
+    font-family: "Geologica-Light";
+    color: var(--dark-grey);
+    font-size: 16px;
+}
+.card-tabs-content-list-item-content--description{
+    max-width: 774px;
+}
+.card-props-item:not(:last-child){
+    padding-bottom: 8px;
+}
+.card-props-item-name{
+    color: var(--dark-grey);
+}
+.card-props-item-value{
+    width: 195px;
+    white-space: nowrap;
+    color: var(--black);
+}
+.card-tabs-variants{
+    display: flex;
+    gap: 24px;
+}
+.card-tabs-variants-text{
+    text-align: center;
+    padding-top: 8px;
+    font-size: 16px;
+    font-family: "Geologica-Light";
+    color: var(--black);
+}
+.advanteges-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 24px;
+}
+.advanteges-list-item{
+    width: 100%;
+    max-width: 318px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.advanteges-list-item-text{
+    font-family: "Geologica-Light";
+    font-size: 16px;
+    color: var(--black);
+    max-width: 196px;
+}
+
+@media screen{
+    .card-tabs-list-item:hover{
+        color: var(--black);
+    }
 }
