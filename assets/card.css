@@ -6,6 +6,7 @@
     width: 100%;
     max-width: 698px;
     display: flex;
+    align-items: start;    
     gap: 8px;
 }
 .card-info{
@@ -32,7 +33,7 @@
     padding-bottom: 10px;
 }
 .card-gallery-list-item{
-    width: 90px;
+    width: inherit;
     height: 90px;
     cursor: pointer;
 }
@@ -296,5 +297,91 @@
 @media screen{
     .card-tabs-list-item:hover{
         color: var(--black);
+    }
+}
+@media(max-width: 1300px){
+    .card-top{
+        gap: 30px;
+    }
+}
+@media(max-width: 1090px){
+    .card-info{
+        max-width: 400px;
+    }
+    .card-buy{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .collection-list-item, .collection-list-item.active{
+        height: unset;
+    }
+}
+@media(max-width: 1000px){
+    .card-props{
+        flex-direction: column;
+        gap: 8px;
+    }
+    .card-props-right, .card-props-left{
+        max-width: 100%;
+    }
+}
+@media(max-width: 990px){
+    .card-tabs-list-item{
+        white-space: nowrap;
+    }
+    .card-tabs-list{
+        overflow-x: scroll;
+    }
+}
+@media(max-width: 935px){
+    .card-top{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-info{
+        max-width: 100%;
+    }
+}
+@media(max-width: 505px){
+    .card-gallery-list{
+        max-width: 60px;
+    }
+    .card-gallery-list-item{
+        height: 60px;
+    }
+    .card-props{
+        font-size: 14px;
+    }
+    .card-tabs-variants-item{
+        width: 100%;
+        max-width: 45%;
+    }
+    .card-tabs-variants{
+        flex-wrap: wrap;
+    }
+    .card-tabs-variants-item-pic{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media(max-width: 480px){
+    .card-name{
+        font-size: 24px;
+    }
+}
+@media(max-width: 465px){
+    .card-props{
+        font-size: 12px;
+    }
+    .card-props-item-value{
+        width: 145px;
+    }
+}
+@media(max-width: 375px){
+    .card-props-item-name{
+        width: 155px;
+    }
+    .card-props-item-space{
+        display: none;
     }
 }

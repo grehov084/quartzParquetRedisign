@@ -24,6 +24,7 @@
     font-family: "Geologica-Regular";
     color: var(--black);
     padding-bottom: 8px;font-size: 16px;
+    white-space: nowrap;
 }
 .calc-params{
     display: flex;
@@ -70,4 +71,53 @@
     cursor: pointer;
     width: 232px;
     text-align: center;
+}
+@media(max-width: 860px){
+    .calc-params-item-action-value-wrap{
+        text-align: center;
+    }
+}
+@media(max-width: 705px){
+    .calc-params-item-action-value-wrap{
+        font-size: 14px;
+    }
+}
+@media(max-width: 680px){
+    .calc-params-item:not(.calc-params-item--mw){
+        max-width: 48%;
+    }
+    .calc-params-item--mw{
+        flex-direction: column;
+        align-items: start;
+    }
+}
+@media(max-width: 620px){
+    .calc-params-item:not(.calc-params-item--mw){
+        max-width: 46%;
+    }
+    .calc-params-item-action-value{
+        padding: 7px 11px;
+    }
+}
+@media(max-width: 535px){
+    .calc-params__input{
+        font-size: 12px;
+    }
+}
+@media(max-width: 470px){
+    .calc-params-item-action--df{
+        flex-direction: column;
+    }
+    .calc-params-item--mw{
+        max-width: 47%;
+    }
+    .calc-params-item-action-value{
+        padding: 7px;
+    }
+}
+@media(max-width: 420px){
+    .calc-params-item--mw, .calc-params-item:not(.calc-params-item--mw), .calc-params__input {
+        max-width: 100%;
+    }
+    
 }
